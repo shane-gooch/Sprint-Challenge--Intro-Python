@@ -34,7 +34,7 @@ def cityreader(cities=[]):
     with open('cities.csv', newline='') as csv_file:
         reader = csv.reader(csv_file)
         for i in reader:
-            if not i[0] == 'City':
+            if not i[0] == 'city':
                 cities.append(City(i[0], float(i[3]), float(i[4])))
     return cities
 
